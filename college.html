@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Campus Fest 2026</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f3f5ff;
+            color: #22254a;
+        }
+
+        header {
+            background: linear-gradient(
+                rgba(30, 10, 100, 0.65),
+                rgba(200, 20, 130, 0.55)
+            ),
+            url("https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&w=1500&q=80");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 80px 15px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            margin: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background: #171936;
+            padding: 16px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd43b;
+        }
+
+        section {
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #5524a8;
+        }
+
+        .events {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            width: 240px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px #d6d6e8;
+            padding-bottom: 15px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            color: #e52e85;
+        }
+
+        .card p {
+            padding: 0 12px;
+        }
+
+        .workshop {
+            background: linear-gradient(
+                rgba(25, 30, 70, 0.7),
+                rgba(25, 30, 70, 0.7)
+            ),
+            url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            border-radius: 12px;
+        }
+
+        .workshop h2 {
+            color: #ffd43b;
+        }
+
+        table {
+            width: 90%;
+            max-width: 750px;
+            margin: auto;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+        }
+
+        th {
+            background: #6425b5;
+            color: white;
+        }
+
+        .coordinator {
+            background: #e7e5ff;
+            padding: 15px;
+            border-radius: 10px;
+            width: 230px;
+        }
+
+        .rules {
+            background: #ffe5f1;
+            border-radius: 12px;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        form {
+            background: linear-gradient(
+                rgba(20, 20, 65, 0.88),
+                rgba(75, 25, 130, 0.88)
+            ),
+            url("https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=1200&q=80");
+            background-size: cover;
+            background-position: center;
+            padding: 25px;
+            border-radius: 12px;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        form h2 {
+            color: #ffd43b;
+        }
+
+        input, select, button {
+            width: 90%;
+            padding: 12px;
+            margin: 8px;
+            box-sizing: border-box;
+            border-radius: 6px;
+            border: none;
+        }
+
+        button {
+            background: #ffcc33;
+            color: #222;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #ff8c42;
+        }
+
+        footer {
+            background: #171936;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .card, .coordinator {
+                width: 90%;
+            }
+
+            table {
+                width: 100%;
+                font-size: 12px;
+            }
+
+            th, td {
+                padding: 7px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header id="home">
+    <h1>🎓 VIBRANT VIBES 2026</h1>
+    <p>Annual College Festival</p>
+    <p>15 - 16 March | Our College Campus</p>
+    <p>Learn • Compete • Celebrate</p>
+    <a href="#register">
+        <button style="width:180px;">Register Now</button>
+    </a>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#events">Events</a>
+    <a href="#workshops">Workshops</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#coordinators">Coordinators</a>
+    <a href="#rules">Rules</a>
+    <a href="#register">Register</a>
+</nav>
+
+<section id="events">
+    <h2>Our Events</h2>
+    <p>Choose your passion and show your talent!</p>
+
+    <div class="events">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Students working on computers">
+            <h3>💻 Technical Events</h3>
+            <p>Coding Competition</p>
+            <p>Paper Presentation</p>
+            <p>Project Expo</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80" alt="Stage performance">
+            <h3>🎵 Cultural Events</h3>
+            <p>Singing</p>
+            <p>Dancing</p>
+            <p>Fashion Show</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80" alt="Technology workshop">
+            <h3>🧠 Workshops</h3>
+            <p>Web Development</p>
+            <p>Artificial Intelligence</p>
+            <p>Robotics</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=600&q=80" alt="Festival concert">
+            <h3>🎮 Fun Events</h3>
+            <p>Quiz Competition</p>
+            <p>Treasure Hunt</p>
+            <p>Gaming Contest</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="workshops" class="workshop">
+    <h2>Featured Workshops</h2>
+    <p>Learn new skills and build your future!</p>
+    <p>Web Development — 10:00 AM</p>
+    <p>Artificial Intelligence — 12:00 PM</p>
+    <p>Robotics — 2:00 PM</p>
+</section>
+
+<section id="schedule">
+    <h2>Event Schedule</h2>
+
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Event</th>
+            <th>Venue</th>
+        </tr>
+        <tr>
+            <td>15 March</td>
+            <td>9:00 AM</td>
+            <td>Inauguration</td>
+            <td>Main Stage</td>
+        </tr>
+        <tr>
+            <td>15 March</td>
+            <td>10:00 AM</td>
+            <td>Technical Events</td>
+            <td>Computer Lab</td>
+        </tr>
+        <tr>
+            <td>15 March</td>
+            <td>12:00 PM</td>
+            <td>Workshops</td>
+            <td>Seminar Hall</td>
+        </tr>
+        <tr>
+            <td>15 March</td>
+            <td>2:00 PM</td>
+            <td>Cultural Events</td>
+            <td>Auditorium</td>
+        </tr>
+        <tr>
+            <td>16 March</td>
+            <td>4:00 PM</td>
+            <td>Prize Distribution</td>
+            <td>Main Stage</td>
+        </tr>
+    </table>
+</section>
+
+<section id="coordinators">
+    <h2>Event Coordinators</h2>
+
+    <div class="events">
+        <div class="coordinator">
+            <h3>Rahul Kumar</h3>
+            <p>Technical Events</p>
+            <p>Phone: 9876543210</p>
+        </div>
+
+        <div class="coordinator">
+            <h3>Priya Sharma</h3>
+            <p>Cultural Events</p>
+            <p>Phone: 9876501234</p>
+        </div>
+
+        <div class="coordinator">
+            <h3>Arjun Reddy</h3>
+            <p>Workshop Coordinator</p>
+            <p>Phone: 9876512345</p>
+        </div>
+    </div>
+</section>
+
+<section id="rules">
+    <h2>Festival Rules</h2>
+
+    <div class="rules">
+        <p>1. Carry your college ID card.</p>
+        <p>2. Register before participating.</p>
+        <p>3. Follow event timings.</p>
+        <p>4. Maintain discipline on campus.</p>
+        <p>5. Follow coordinator instructions.</p>
+    </div>
+</section>
+
+<section id="register">
+    <form>
+        <h2>🎉 Register for the Festival</h2>
+
+        <input type="text" placeholder="Your Name" required>
+
+        <input type="email" placeholder="Your Email" required>
+
+        <input type="text" placeholder="College Name" required>
+
+        <input type="tel" placeholder="Phone Number" required>
+
+        <select required>
+            <option value="">Select Event Category</option>
+            <option>Technical Events</option>
+            <option>Cultural Events</option>
+            <option>Workshops</option>
+            <option>Fun Events</option>
+        </select>
+
+        <button type="submit">Register Now →</button>
+    </form>
+</section>
+
+<footer>
+    <h3>🎓 Campus Fest 2026</h3>
+    <p>Learn • Compete • Celebrate</p>
+    <p>© 2026 College Festival. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+
+
+
+What makes this website beautiful?
+- Hero banner: A large festival background image with a purple and pink overlay.
+- Event cards: Each category has its own photograph and colorful heading.
+- Workshop banner: A background image with white text.
+- Registration form: A dark background image with a bright yellow button.
+- Responsive layout: Cards automatically move to new rows on smaller screens.
+Important: The festival dates, contact numbers, and coordinator names are examples. The registration form does not save data until connected to a backend or form service.
+
+
+
+
+
+
+
+
+
+
+
+For hosting a college festival site, here’s one VPS hosting option.
+
+
+Ad
+Ad options
+
+
+
+Learn more
+
+
+
+
+
+
+
+
+
+Ads do not influence the answers you get from ChatGPT. Your chats stay private. Learn about ads and personalization
